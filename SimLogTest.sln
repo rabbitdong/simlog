@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimLogTest", "SimLogTest\SimLogTest.csproj", "{4A4FC280-A7CE-48DB-B7D2-422B2E365CA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimLogLib", "SimLogLib\SimLogLib.csproj", "{9AA40293-C1B6-487B-8509-D4DD077C04BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4A4FC280-A7CE-48DB-B7D2-422B2E365CA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A4FC280-A7CE-48DB-B7D2-422B2E365CA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A4FC280-A7CE-48DB-B7D2-422B2E365CA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A4FC280-A7CE-48DB-B7D2-422B2E365CA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AA40293-C1B6-487B-8509-D4DD077C04BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AA40293-C1B6-487B-8509-D4DD077C04BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AA40293-C1B6-487B-8509-D4DD077C04BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AA40293-C1B6-487B-8509-D4DD077C04BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
