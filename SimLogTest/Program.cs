@@ -38,14 +38,16 @@ namespace SimLogTest
             while (true)
             {
                 int c = Console.Read();
-                if (c == 'p')
+                if (c == 'x')
+                {
+                    break;
+                }
+                else if (c == 'p')
                 {
                     List<LogItem> logs = Log.Instance.GetLog(DateTime.Now);
                     foreach (LogItem item in logs)
                         Console.WriteLine("[{0}] [{1}] [{2}]", item.Time, item.Level, item.Message);
                 }
-                else if (c == 'x')
-                    break;
             }
             t.Wait();
         }

@@ -78,6 +78,7 @@ namespace SimLogLib
                     item.Message = sr.ReadString();
                     logitems.Add(item);
                 }
+                sr.Close();
             }
 
             return logitems;

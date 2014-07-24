@@ -90,8 +90,11 @@ namespace SimLogLib
             if (DateTime.Now < DateTime.Today.AddDays(1).AddSeconds(-1))
                 return;
 
-            //indicate the write thread to dump the log.
-            Monitor.Pulse(_logQueue);
+            lock(_logQueue)
+            {
+                //indicate the write thread to dump the log.
+                Monitor.Pulse(_logQueue);
+            }
 
             //Timer begin after: 1000 * 60 * 60 * 23 + 1000 * 60 * 59  = 23hr 59min 
             _timer.Change(86340000, 1000);
