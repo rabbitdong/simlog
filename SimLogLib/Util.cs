@@ -20,9 +20,13 @@ namespace SimLogLib
         {
             StringBuilder str = new StringBuilder();
 
-            foreach (string name in parameters.Keys)
+            string[] keys = parameters.AllKeys;
+            foreach (string key in keys)
             {
-                str.AppendFormat("[{0}:{1}]&", name, parameters[name]);
+                if (parameters[key] != null)
+                {
+                    str.AppendFormat("[{0}:{1}]&", key, parameters[key]);
+                }
             }
 
             //Remove the last '&' char.
